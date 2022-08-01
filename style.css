@@ -16,8 +16,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content:space-between ;
-    color: white;
     align-items:center;
+}
+
+header, a {
+    color: white;
 }
 
 header > div {
@@ -25,6 +28,8 @@ header > div {
     text-align: center;
     margin: auto;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 main {

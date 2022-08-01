@@ -8,9 +8,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <div>
+            <img src="" alt="">
+            <h1>ODIN</h1>
+        </div>
+        <p>Photo by </p>
+    </header>
+    <main>
+        <p>This is not a real online service! You know you need something like this in your life to help you relaize your deepest dreams. Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+        <form action="" method="post" id="new_user">
+            <h2>Let's do this!</h2>
 
+            <div class="col_1">
+                <label for="f_name">FIRST NAME</label>
+                <input type="text" id="f_name">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email">
+                <label for="p_word">PASSWORD</label>
+                <input type="password" id="p_word">
+            </div>
 
+            <div class="col_2">
+                <label for="l_name">LAST NAME</label>
+                <input type="text" id="l_name">
+                <label for="p_num">PHONE NUMBER</label>
+                <input type="tel" id="p_num">
+                <label for="p_word_2">CONFIRM PASSWORD</label>
+                <input type="password" id="p_word_2">
+            </div>
+        </form>
+        
+        <button type="submit" form="new_user">Create Account</button>
+
+        <p>Already have an account? <a href="">Log in</a></p>
+
+    </main>
 
 
     <script src="script.js"></script>

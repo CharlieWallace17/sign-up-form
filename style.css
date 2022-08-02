@@ -1,3 +1,7 @@
+:root {
+    --cw-white: white;
+}
+
 html, body {
     margin: 0;
     height: 100%;
@@ -12,26 +16,37 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex: 1;
+    flex: 1 1 40%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between ;
     align-items:center;
 }
 
 header, a {
-    color: white;
+    color: var(--cw-white);
 }
 
 header > div {
     background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
     margin: auto;
+    margin-top: 15rem;
     width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    fill: var(--cw-white);
+    height: max(180px, 9rem);
+    flex: 1;
+}
+
+h1 {
+    /* margin-left: -5rem; */
+    flex: 1;
+    font-size: 4rem;
 }
 
 main {
-    flex: 1;
+    flex: 1 1 60%;
 }

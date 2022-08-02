@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@100&display=swap');
+
 :root {
     --cw-white: white;
 }
@@ -5,6 +7,7 @@
 html, body {
     margin: 0;
     height: 100%;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {

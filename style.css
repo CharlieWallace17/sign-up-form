@@ -27,23 +27,21 @@ header, a {
 }
 
 header > div {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     margin: auto;
     margin-top: 15rem;
     width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 svg {
     fill: var(--cw-white);
     height: max(180px, 9rem);
-    flex: 1;
+    width: 8rem;
 }
 
 h1 {
-    /* margin-left: -5rem; */
-    flex: 1;
     font-size: 4rem;
 }
 

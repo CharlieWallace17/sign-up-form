@@ -96,6 +96,19 @@ form {
     flex-flow: row wrap;
 }
 
+input {
+    all: unset;
+    border: solid 2px black;
+}
+
+input:focus,
+input:focus-visible,
+input:focus-within,
+input:hover {
+    border: solid rgb(0, 179, 255);
+    box-shadow: 2px 2px 5px gray;
+}
+
 .col-1,
 .col-2 {
     display: block;
@@ -105,6 +118,7 @@ form {
 
 label {
     font-weight: 500;
+    color: var(--cw-green);
 }
 
 input {
@@ -127,6 +141,10 @@ button {
     margin-top: 2rem;
     background-color: var(--cw-green);
     color: var(--cw-white);
+}
+
+button:hover {
+    box-shadow: 2px 2px 5px gray;
 }
 
 main a {

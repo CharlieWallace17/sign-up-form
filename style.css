@@ -3,6 +3,7 @@
 :root {
     --cw-white: white;
     --cw-min-margin: 5rem;
+    --cw-max-margin: min(5rem, 60%);
 }
 
 html, body {
@@ -57,9 +58,23 @@ main {
     justify-content: space-around;
 }
 
-h2, p, button {
+main div {
+    display: flex;
+    flex-direction: column;
+}
+
+main h2, 
+main p, 
+main button {
     margin-left: var(--cw-min-margin);
-    margin-right: var(--cw-min-margin);
+    margin-right: var(--cw-max-margin);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.row-2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 form {
@@ -84,4 +99,15 @@ input {
     width: 15rem;
     border-radius: 5px;
     font-size: 120%;
+}
+
+.row-3 {
+    flex: 1;
+}
+
+button {
+    height: 4rem;
+    width: 20rem;
+    border-radius: 10px;
+    margin-top: 2rem;
 }

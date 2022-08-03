@@ -4,7 +4,6 @@
     --cw-white: white;
     --cw-green:  rgb(113 139 5 / 96%);
     --cw-min-margin: 5rem;
-    --cw-max-margin: min(5rem, 60%);
 }
 
 html, body {
@@ -69,24 +68,32 @@ main div {
     justify-content: center;
 }
 
+.row-1,
+.row-3 {
+    background-color: rgba(250, 255, 255);
+}
+
 main h2, 
 main p, 
 main button {
     margin-left: var(--cw-min-margin);
-    margin-right: var(--cw-max-margin);
+    margin-right: var(--cw-min-margin);
     font-size: 1.5rem;
     font-weight: 550;
+    max-width: 40rem;
 }
 
 .row-2 {
-    box-shadow: 2px 0px 3px;
+    box-shadow:0px 3px 10px gray;
     flex: 1 1 40%;
     justify-content: center;
+    position: relative;
 }
 
 form {
     display: flex;
     justify-content:left;
+    flex-flow: row wrap;
 }
 
 .col-1,

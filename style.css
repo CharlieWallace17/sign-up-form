@@ -2,6 +2,7 @@
 
 :root {
     --cw-white: white;
+    --cw-min-margin: 5rem;
 }
 
 html, body {
@@ -56,17 +57,31 @@ main {
     justify-content: space-around;
 }
 
+h2, p, button {
+    margin-left: var(--cw-min-margin);
+    margin-right: var(--cw-min-margin);
+}
+
 form {
     display: flex;
-    justify-content: space-around;
+    justify-content:left;
 }
 
 .col-1,
 .col-2 {
     display: block;
     width: 15rem;
+    margin-left: var(--cw-min-margin);
+}
+
+label {
+    font-weight: 500;
 }
 
 input {
     margin-bottom: 2rem;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 5px;
+    font-size: 120%;
 }

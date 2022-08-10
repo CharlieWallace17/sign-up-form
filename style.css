@@ -99,6 +99,11 @@ form {
 input {
     all: unset;
     border: solid 2px black;
+    margin-bottom: 2rem;
+    height: 2rem;
+    width: 15rem;
+    border-radius: 5px;
+    font-size: 120%;
 }
 
 input:focus,
@@ -106,6 +111,11 @@ input:focus-visible,
 input:focus-within,
 input:hover {
     border: solid rgb(0, 179, 255);
+    box-shadow: 2px 2px 5px gray;
+}
+
+input[type="email"]:invalid {
+    border: solid rgb(255, 0, 4);
     box-shadow: 2px 2px 5px gray;
 }
 
@@ -119,14 +129,6 @@ input:hover {
 label {
     font-weight: 500;
     color: var(--cw-green);
-}
-
-input {
-    margin-bottom: 2rem;
-    height: 2rem;
-    width: 15rem;
-    border-radius: 5px;
-    font-size: 120%;
 }
 
 .row-3 {

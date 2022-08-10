@@ -114,7 +114,8 @@ input:hover {
     box-shadow: 2px 2px 5px gray;
 }
 
-input[type="email"]:invalid {
+input[type="email"]:invalid,
+.error {
     border: solid rgb(255, 0, 4);
     box-shadow: 2px 2px 5px gray;
 }
